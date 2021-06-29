@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <title>orang34ever</title>
+</head>
+<body>
+  <!-- <h4 style="text-align:center">Something beautiful used to be here.<br>I'm a dev, so it's still here, behind the screen. </h4> -->
+  <div class="container">
+    <img id="main-image" src="IMG_1131.JPG" style="display: none;" />
+    <div id="dots"></div>
+    <canvas id="myCanvas" style="display: none;">
+    </canvas>
+    <!-- <audio controls preload="auto" autoplay  id="myAudio" style="display: none">
+      <source src="/public/love-ya.mp3" type="audio/mpeg">
+      <source src="/love-ya.mp3" type="audio/ogg">
+    </audio> -->
+
+    <audio src="./love-ya.mp3" id="dunk"></audio>
+    <script type="text/javascript">
+      window.onload=function(){
+        document.getElementById("dunk").play();
+      }
+    </script>
+    <!-- <embed name="GoodEnough" src="./love-ya.mp3" loop="false" hidden="false" autostart="true"> -->
+    <!-- 
+    <iframe width="560" height="315 " src="https://www.youtube.com/embed/qhDOhwlJYIs?autoplay=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  </div>
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+  crossorigin="anonymous">
+</script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src='./logic.js' defer></script>
+</html>
